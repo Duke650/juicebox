@@ -184,6 +184,8 @@ async function testDB() {
     console.log("Calling getUserById with 1");
     const albert = await getUserById(1);
     console.log("Result:", albert);
+    const newTags = await createTags(["#test", "#myTags"])
+    console.log("Create tags TEST!!!!!", newTags);
 
     // console.log("Calling getPostsByTagName with #happy");
     // const postsWithHappy = await getPostsByTagName("#happy");
